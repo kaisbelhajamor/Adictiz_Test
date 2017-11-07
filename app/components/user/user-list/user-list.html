@@ -1,0 +1,35 @@
+
+<div class="bs-example" data-example-id="striped-table">
+    <table class="table table-striped" ng-show="vm.users.length != 0">
+        <thead>
+        <tr>
+            <th> {{ "USER_PAGE.USER_PAGE_TABLE.USER_PAGE_TABLE_COLUMN_NAME" | translate}}</th>
+            <th> {{ "USER_PAGE.USER_PAGE_TABLE.USER_PAGE_TABLE_COLUMN_PHONE" | translate}}</th>
+            <th> {{ "USER_PAGE.USER_PAGE_TABLE.USER_PAGE_TABLE_COLUMN_EMAIL" | translate}}</th>
+            <th> {{ "USER_PAGE.USER_PAGE_TABLE.USER_PAGE_TABLE_COLUMN_ADDRESS" | translate}}</th>
+            <th> {{ "USER_PAGE.USER_PAGE_TABLE.USER_PAGE_TABLE_COLUMN_BIRTHDAY" | translate}}</th>
+            <th> {{ "USER_PAGE.USER_PAGE_TABLE.USER_PAGE_TABLE_COLUMN_GENDER" | translate}}</th>
+            <th></th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr   ng-repeat="user in vm.users">
+
+            <td>{{user.name}}</td>
+            <td>{{user.phone}}</td>
+            <td>{{user.email}}</td>
+            <td>{{user.address}}</td>
+            <td>{{user.dateBirth | date}}</td>
+            <td>{{user.gender}}</td>
+            <td>
+
+                <button class="btn btn-danger" ng-click="vm.deleteUser(user)">delete</button></td>
+        </tr>
+        </tbody>
+
+    </table>
+    <div ng-show="vm.users.length === 0" class="alert alert-info mt2">
+        <p class="center">{{ "USER_PAGE.USER_PAGE_TABLE.TABLE_EMPTY" | translate}}</p>
+    </div>
+</div>

@@ -1,0 +1,87 @@
+
+
+<form name="vm.userForm">
+    <md-toolbar>
+        <div class="md-toolbar-tools">
+            <h2>{{"USER_PAGE.USER_PAGE_FORM.USER_PAGE_FORM_TITLE" | translate}}</h2>
+            <span flex></span>
+            <md-button class="md-icon-button" ng-click="vm.cancel()">
+                <md-icon aria-label="close" class="material-icons">close</md-icon>
+            </md-button>
+        </div>
+    </md-toolbar>
+
+
+    <md-dialog-content>
+        <div class="md-dialog-content">
+            <div layout="column">
+                <br/>
+                <md-content class="md-no-momentum">
+                    <md-input-container class="md-icon-float md-block">
+                        <!-- Use floating label instead of placeholder -->
+                        <label>{{"USER_PAGE.USER_PAGE_FORM.USER_PAGE_FORM_NAME_INPUT" | translate}}</label>
+                        <md-icon aria-label="person" class="material-icons">person</md-icon>
+                        <input ng-model="vm.user.name" name="uName" type="text" ng-required="true">
+                        <strong class="alert-warning" ng-show="vm.userForm.uName.$error.required">
+                            {{"USER_PAGE.USER_PAGE_FORM_ERROR.USER_PAGE_FORM_NAME_ERROR" | translate}}
+                        </strong>
+                    </md-input-container>
+
+
+                    <md-input-container class="md-block">
+                        <md-icon aria-label="phone" class="material-icons">phone</md-icon>
+                        <input name="uPhone" ng-model="vm.user.phone" type="text" placeholder='{{"USER_PAGE.USER_PAGE_FORM.USER_PAGE_FORM_PHONE_INPUT" | translate}}' ng-required="true">
+                        <strong  class="alert-warning" ng-show="vm.userForm.uPhone.$error.required">
+                            {{"USER_PAGE.USER_PAGE_FORM_ERROR.USER_PAGE_FORM_PHONE_ERROR" | translate}}
+                        </strong>
+                    </md-input-container>
+
+                    <md-input-container class="md-block">
+                        <md-icon aria-label="email" class="material-icons">email</md-icon>
+                        <input name="uEmail" ng-model="vm.user.email" type="email" placeholder='{{"USER_PAGE.USER_PAGE_FORM.USER_PAGE_FORM_EMAIL_INPUT" | translate}}' ng-required="true">
+                        <strong  class="alert-warning" ng-show="vm.userForm.uEmail.$error.required">{{"USER_PAGE.USER_PAGE_FORM_ERROR.USER_PAGE_FORM_EMAIL_ERROR" | translate}}</strong>
+                        <strong class="alert-warning"  ng-show="vm.userForm.uEmail.$error.email">{{"USER_PAGE.USER_PAGE_FORM_ERROR.USER_PAGE_FORM_EMAIL_ERROR_INVALID" | translate}}</strong>
+                    </md-input-container>
+
+                    <md-input-container class="md-block">
+                        <md-icon aria-label="place" class="material-icons">place</md-icon>
+                        <input name="uPlace" ng-model="vm.user.address" type="text" placeholder='{{"USER_PAGE.USER_PAGE_FORM.USER_PAGE_FORM_ADDRESS_INPUT" | translate}}' ng-required="true">
+                        <strong  class="alert-warning"  ng-show="vm.userForm.uPlace.$error.required">
+                            {{"USER_PAGE.USER_PAGE_FORM_ERROR.USER_PAGE_FORM_ADDRESS_ERROR" | translate}} </strong>
+                    </md-input-container>
+
+                    <md-input-container class="md-block">
+                        <md-icon aria-label="face" class="material-icons">face</md-icon>
+                        <md-select name="uGender" ng-model="vm.user.gender" placeholder='{{"USER_PAGE.USER_PAGE_FORM.USER_PAGE_FORM_GENDER_INPUT" | translate}}' class="md-no-underline" ng-required="true">
+                            <md-option value="M">{{"USER_PAGE.USER_PAGE_FORM.OPTION_MALE" | translate}}</md-option>
+                            <md-option value="F">{{"USER_PAGE.USER_PAGE_FORM.OPTION_FEMALE" | translate}}</md-option>
+                        </md-select>
+                        <strong  class="alert-warning" ng-show="vm.userForm.uGender.$error.required">
+                            {{"USER_PAGE.USER_PAGE_FORM_ERROR.USER_PAGE_FORM_GENDER_ERROR" | translate}}</strong>
+                    </md-input-container>
+
+                    <div layout-gt-xs="row">
+                        <div flex-gt-xs="">
+                            <h4>{{"USER_PAGE.USER_PAGE_FORM.USER_PAGE_FORM_BIRTHDAY_INPUT" | translate}}</h4>
+                            <md-datepicker name="uDate" ng-model="vm.user.dateBirth" ng-click="vm.isOpen = true" ng-required="true" md-placeholder='{{"USER_PAGE.USER_PAGE_FORM.USER_PAGE_FORM_BIRTHDAY_INPUT" | translate}}' md-is-open="crtlUserForm.isOpen"></md-datepicker>
+                        </div>
+                    </div>
+                    <strong  class="alert-warning" ng-show="vm.userForm.uDate.$error.required"> {{"USER_PAGE.USER_PAGE_FORM_ERROR.USER_PAGE_FORM_GENDER_ERROR" | translate}} </strong>
+                </md-content>
+
+            </div>
+
+            <div ng-show="!vm.validUserForm && vm.warning" class="alert alert-danger">
+               <p> {{"USER_PAGE.SAVE_MESSAGE_ERROR_DEFAULT" | translate}} </p>
+                <p> {{vm.messageStatut}} </p>
+            </div>
+
+            <md-dialog-actions layout="row">
+                <md-button ng-click="vm.save($event)" class="btn-info">Save</md-button>
+            </md-dialog-actions>
+
+        </div>
+    </md-dialog-content>
+
+
+</form>

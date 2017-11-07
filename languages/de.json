@@ -1,0 +1,63 @@
+{
+  "NAV_BAR": {
+    "ABOUT": "Uber mich",
+    "USER": "Benutzer",
+    "GALLERY": "Galerie"
+  },
+  "ABOUT_PAGE": {
+    "ABOUT_TITLE": "Uber ADICTIZ",
+    "ABOUT_TITLE2": "Das Marketingspiel, ein neues Werbemedium für Marken",
+    "ABOUT_CONTENT": "Die Entstehung von mobiler Technologie und Social Media hat die Art und Weise verwandelt, wie Marken mit ihren Kunden und Interessenten verbunden sind. Benutzer können sich in den unendlichen Strom von Anzeigen verklemmt, und Marken kämpfen um einen klaren Blick auf den ROI für ihre Marketing-Bemühungen zu bekommen. Angesichts dessen hat Adictiz die Schaffung und den Austausch von Online-Marketing-Spielen und Wettbewerben industrialisiert, um als ihr eigenes wahres Werbemittel zu dienen. Adictiz bietet eine hochwirksame Lösung für Werbetreibende und Agenturen, indem sie es ihnen ermöglicht, Marketing-Spiele und Wettbewerbe als wiederkehrende Werbemittel zu nutzen, um reale Ergebnisse in Bezug auf Rekrutierung, Engagement und Umwandlung zu messen. Adictiz wurde von Facebook für ihren ergebnisorientierten Ansatz anerkannt, der sie 2012 mit dem PMD-Label (Preferred Marketing Developer) ausgezeichnet hat.",
+    "ABOUT_CONTENT2": "Die Ankunft mobiler und sozialer Medien hat die Art und Weise verändert, wie Marken ihre Kunden und potenziellen Kunden ansprechen. Nutzer ertrinken in der Werbung und Marken haben keine klare Sicht auf den durch ihre Aktionen generierten ROI. Mit unseren Lösungen können Werbetreibende und Agenturen das Marketing-Spiel als wiederkehrendes Werbetool nutzen und konkrete Ergebnisse in Bezug auf Rekrutierung, Engagement und Conversion messen."
+  },
+  "USER_PAGE": {
+    "USER_PAGE_TITLE": "LISTE DER BENUTZER",
+    "USER_PAGE_TABLE": {
+      "USER_BUTTON":"Benutzer hinzufügen",
+      "TABLE_EMPTY":"Benutzerliste ist leer",
+      "USER_PAGE_TABLE_COLUMN_NAME": "Name",
+      "USER_PAGE_TABLE_COLUMN_PHONE": "Telefon",
+      "USER_PAGE_TABLE_COLUMN_EMAIL": "Email",
+      "USER_PAGE_TABLE_COLUMN_ADDRESS": "Adresse",
+      "USER_PAGE_TABLE_COLUMN_BIRTHDAY": "Geburtstag",
+      "USER_PAGE_TABLE_COLUMN_GENDER": "Geschlecht"
+    },
+    "USER_PAGE_FORM": {
+      "OPTION_MALE" :"Männlich",
+      "OPTION_FEMALE" :"Weiblich",
+
+      "USER_PAGE_FORM_TITLE": "Neuer Benutzer",
+      "USER_PAGE_FORM_NAME_INPUT": "NAME",
+
+      "USER_PAGE_FORM_PHONE_INPUT": "TELEPHON",
+      "USER_PAGE_FORM_EMAIL_INPUT": "EMAIL",
+      "USER_PAGE_FORM_ADDRESS_INPUT": "ADRESSE",
+      "USER_PAGE_FORM_BIRTHDAY_INPUT": "GEBURSTAG",
+      "USER_PAGE_FORM_GENDER_INPUT": "Geschlecht"
+    },
+    "USER_PAGE_FORM_ERROR": {
+      "USER_PAGE_FORM_NAME_ERROR": "Sagen Sie uns Ihren Namen",
+      "USER_PAGE_FORM_PHONE_ERROR": "Sagen Sie uns Ihren TELEPHON",
+      "USER_PAGE_FORM_EMAIL_ERROR": "Sagen Sie uns Ihren EMAIL",
+      "USER_PAGE_FORM_EMAIL_ERROR_INVALID": "Dies ist keine gültige E-Mail.",
+      "USER_PAGE_FORM_ADDRESS_ERROR": "Sagen Sie uns Ihren ADRESSE",
+      "USER_PAGE_FORM_BIRTHDAY_ERROR": "Sagen Sie uns Ihren GEBURSTAG",
+      "USER_PAGE_FORM_GENDER_ERROR": "Sagen Sie uns Ihren Geschlecht"
+    },
+    "SAVE_MESSAGE_ERROR_DEFAULT" : "Überprüfen Sie Ihre Form!",
+    "USER_PAGE_FORM_SAVE_MESSAGE_ERROR": "Ungültiges Formular nicht hinzugefügt",
+    "USER_PAGE_FORM_SAVE_OK_ALERT": {
+      "CONTENT": "Ihr Benutzer wird hinzugefügt",
+      "HEADER": "Erfolg",
+      "BUTTON": "Ich habs"
+    }
+
+  },
+  "GALLERY_PAGE": {
+    "GALLERY_PAGE_TITLE": "Kategorie-Liste",
+    "GALLERY_PAGE_SEARCH_INPUT": "Suche in Galerien",
+    "GALLERY_PAGE_SEARCH_CATEGORY": "Suche nach Kategorie",
+    "GALLERY_PAGE_SEARCH_CATEGORY_FIRST": "ALLE"
+
+  }
+}

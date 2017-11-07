@@ -1,0 +1,29 @@
+
+<md-dialog aria-label="{{DialogGallery.gallery.category}}">
+    <form ng-cloak>
+        <md-toolbar>
+            <div class="md-toolbar-tools">
+                <h2>{{DialogGallery.gallery.title}}</h2>
+                <span flex></span>
+                <md-dialog-actions layout="row" class="float-right">
+                    <md-button  ng-click="DialogGallery.cancelBtn()">
+                        <md-icon aria-label="close" class="material-icons">close</md-icon>
+                    </md-button>
+                </md-dialog-actions>
+            </div>
+        </md-toolbar>
+
+        <md-dialog-content>
+            <div class="md-dialog-content">
+                <img class="img-gallery" alt="{{DialogGallery.gallery.title}}" ng-src="{{DialogGallery.gallery.image_url}}">
+                <p class="justify mt3 mb3">
+                    {{DialogGallery.gallery.caption}}
+                </p>
+                <md-button class="md-raised md-warn" ng-repeat="tag in DialogGallery.gallery.tags">
+                    {{tag}}
+                </md-button>
+            </div>
+        </md-dialog-content>
+
+    </form>
+</md-dialog>

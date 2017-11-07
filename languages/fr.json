@@ -1,0 +1,63 @@
+{
+  "NAV_BAR": {
+    "ABOUT": "A propos de nous",
+    "USER": "Utilisateurs",
+    "GALLERY": "galleries"
+  },
+  "ABOUT_PAGE": {
+    "ABOUT_TITLE": "À propos d'Adictiz",
+    "ABOUT_TITLE2": "Le jeu marketing, nouveau média publicitaire pour les marques",
+    "ABOUT_CONTENT": "L’arrivée du mobile et du Social Media a largement transformé la manière dont les marques s’adressent à leurs prospects et clients. L’audience est fragmentée sur les différentes plateformes, les utilisateurs sont noyés dans la publicité et les marques n’ont pas une vision claire du ROI généré par leurs actions marketing. Partant de ce constat, Adictiz se concentre sur les atouts du jeu marketing comme média publicitaire et en industrialise la création.Adictiz apporte ainsi une solution efficace aux annonceurs et agences en leur permettant d’utiliser le jeu marketing comme un outil publicitaire récurrent et d’en mesurer les résultats en terme de recrutement, engagement et conversion. Avec une approche tournée vers la performance, Adictiz a été labellisé PMD Facebook (Preferred Marketing Developer) en 2012.",
+    "ABOUT_CONTENT2": "L’arrivée du mobile et du Social Média a transformé la manière dont les marques s’adressent à leurs prospects et clients. Les utilisateurs sont noyés dans la publicité et les marques n’ont pas une vision claire du ROI généré par leurs actions. Nos solutions permettent aux annonceurs et agences d’utiliser le jeu marketing comme un outil publicitaire récurrent et de mesurer les résultats concrets en terme de recrutement, engagement et conversion."
+  },
+  "USER_PAGE": {
+    "USER_PAGE_TITLE": "LISTE DES UTILISATEURS",
+    "USER_PAGE_TABLE": {
+      "USER_BUTTON":"Ajouter un utilisateur",
+      "TABLE_EMPTY":"La lise des utilisateurs est vide",
+      "USER_PAGE_TABLE_COLUMN_NAME": "Nom",
+      "USER_PAGE_TABLE_COLUMN_PHONE": "Telephone",
+      "USER_PAGE_TABLE_COLUMN_EMAIL": "Email",
+      "USER_PAGE_TABLE_COLUMN_ADDRESS": "Addresse",
+      "USER_PAGE_TABLE_COLUMN_BIRTHDAY": "Date de naissance",
+      "USER_PAGE_TABLE_COLUMN_GENDER": "Genre"
+    },
+    "USER_PAGE_FORM": {
+      "OPTION_MALE" :"Masculin",
+      "OPTION_FEMALE" :"Femenin",
+
+      "USER_PAGE_FORM_TITLE": "Nouveau utilisateur",
+      "USER_PAGE_FORM_NAME_INPUT": "Nom",
+
+      "USER_PAGE_FORM_PHONE_INPUT": "Telephone",
+      "USER_PAGE_FORM_EMAIL_INPUT": "Email",
+      "USER_PAGE_FORM_ADDRESS_INPUT": "Addresse",
+      "USER_PAGE_FORM_BIRTHDAY_INPUT": "Date de naissance",
+      "USER_PAGE_FORM_GENDER_INPUT": "Genre"
+    },
+    "USER_PAGE_FORM_ERROR": {
+      "USER_PAGE_FORM_NAME_ERROR": "Dites-nous votre nom",
+      "USER_PAGE_FORM_PHONE_ERROR": "Dites-nous votre telephone",
+      "USER_PAGE_FORM_EMAIL_ERROR": "Dites-nous votre nom",
+      "USER_PAGE_FORM_EMAIL_ERROR_INVALID": "Dites-nous votre email",
+      "USER_PAGE_FORM_ADDRESS_ERROR": "Dites-nous votre adresse",
+      "USER_PAGE_FORM_BIRTHDAY_ERROR": "Dites-nous votre date de naissance",
+      "USER_PAGE_FORM_GENDER_ERROR": "Dites-nous votre genre"
+    },
+    "SAVE_MESSAGE_ERROR_DEFAULT" : "Vérifier votre Formulaire!",
+    "USER_PAGE_FORM_SAVE_MESSAGE_ERROR": "Erreur! vos données de sont pas ajoutés",
+    "USER_PAGE_FORM_SAVE_OK_ALERT": {
+      "CONTENT": "Utilisateur ajouté avec succés",
+      "HEADER": "Succées",
+      "BUTTON": "D'accord"
+    }
+
+  },
+  "GALLERY_PAGE": {
+    "GALLERY_PAGE_TITLE": "Liste des Galeries",
+    "GALLERY_PAGE_SEARCH_INPUT": "Cherchez dans galleries",
+    "GALLERY_PAGE_SEARCH_CATEGORY": "Cherchez dans categorie",
+    "GALLERY_PAGE_SEARCH_CATEGORY_FIRST": "Tous"
+
+  }
+}

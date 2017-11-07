@@ -1,0 +1,41 @@
+
+
+<div layout="row" layout-align="start" flex class="mt2">
+
+
+    <md-input-container flex="50">
+        <label>{{"GALLERY_PAGE.GALLERY_PAGE_SEARCH_INPUT"|translate}}</label>
+        <input type="text" ng-model="search.$"/>
+    </md-input-container>
+
+    <md-input-container flex="50">
+        <label>{{"GALLERY_PAGE.GALLERY_PAGE_SEARCH_CATEGORY"|translate}}</label>
+        <md-select ng-model="search.category">
+            <md-option ng-value="">{{"GALLERY_PAGE.GALLERY_PAGE_SEARCH_CATEGORY_FIRST"|translate}}</md-option>
+            <md-option ng-value=" gall.category" ng-repeat="gall in  crtlGalleryList.galleries| unique:'category'">{{ gall.category }}</md-option>
+        </md-select>
+    </md-input-container>
+
+</div>
+
+
+    <div class="row">
+        <div class='list-group gallery'>
+
+            <div  ng-repeat="gallery in crtlGalleryList.galleries | filter :search" class='col-sm-6 col-xs-12 col-md-3 col-lg-3'>
+                <div class="md-primary md-raised" ng-click="crtlGalleryList.showAdvanced($event,gallery)">
+                    <img class="image_gallery" ng-src="{{ gallery.image_url }}"  alt="{{ gallery.title }}" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+

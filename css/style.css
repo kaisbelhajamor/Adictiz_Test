@@ -1,0 +1,42 @@
+
+.navBardemoBasicUsage md-content .ext-content {
+    padding: 50px;
+    margin: 20px;
+    background-color: #FFF2E0; }
+
+.inputdemoIcons {
+    /*
+  .right-icon {
+    position: absolute;
+    top: 4px;
+    right: 2px;
+    left: auto;
+    margin-top: 0;
+  }
+  */ }
+.inputdemoIcons .inputIconDemo {
+    min-height: 48px; }
+.inputdemoIcons md-input-container:not(.md-input-invalid) > md-icon.email {
+    color: green; }
+.inputdemoIcons md-input-container:not(.md-input-invalid) > md-icon.name {
+    color: dodgerblue; }
+.inputdemoIcons md-input-container.md-input-invalid > md-icon.email,
+.inputdemoIcons md-input-container.md-input-invalid > md-icon.name {
+    color: red; }
+
+.dialogdemoThemeInheritance .container {
+    text-align: center; }
+._md.md-transition-in {
+    width: 38%;
+}
+
+.gallery
+{
+    display: inline-block;
+    margin-top: 20px;
+}
+.blur {
+    -webkit-filter: blur(4px)
+
+}
+

@@ -1,0 +1,62 @@
+<html lang="en">
+<meta charset="UTF-8">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Angular Material style sheet -->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/theme.css">
+
+</head>
+<body ng-app="GalleryApp" ng-cloak>
+   
+    <navigation></navigation>
+<div class="container main">
+
+        <div ui-view class=" " ></div>
+</div>
+    <div class="footer">
+    <h5 class="center">Copyright © 2017 - Adictiz SAS - Mentions Légales - Termes & Conditions - Politique de Confidentialité - Plan du site</h5>
+    </div>
+
+
+<!-- Angular Material requires Angular.js Libraries -->
+<script src="./libs/angular.min.js"></script>
+<script src="./libs/angular-ui-router.js"></script>
+<script src="./libs/angular-animate.min.js"></script>
+<script src="./libs/angular-aria.min.js"></script>
+<script src="./libs/angular-messages.min.js"></script>
+<script src="./libs/angular-cookies.js"></script>
+<script src="node_modules/angular-translate/dist/angular-translate.js"></script>
+<script src="node_modules/angular-translate/dist/angular-translate-loader-static-files/angular-translate-loader-static-files.min.js"></script>
+
+
+<!-- Angular Material Library -->
+<script src="./libs/angular-material.min.js"></script>
+<script src="app/app.js"></script>
+<script src="app/services/galleries.service.js"></script>
+<script src="app/services/user.service.js"></script>
+<script src="app/filters/unique.filter.js"></script>
+
+<!--user-form -->
+<script src="app/components/user/user-form/user-form.component.js"></script>
+<script src="app/components/user/user-form/user-form.controller.js"></script>
+<!--user-form -->
+<script src="app/components/user/user-add/user-add.component.js"></script>
+<script src="app/components/user/user-add/user-add.controller.js"></script>
+<!--user-form -->
+<script src="app/components/user/user-list/user-list.component.js"></script>
+<script src="app/components/user/user-list/user-list.controller.js"></script>
+
+<!--user-form -->
+<script src="app/components/gallery/gallery-list/gallery-list.component.js"></script>
+<script src="app/components/gallery/gallery-list/gallery-list.controller.js"></script>
+<!-- language-select -->
+<script src="app/components/language-select/language-select.component.js"></script>
+<script src="app/components/language-select/language-select.controller.js"></script>
+<script src="app/components/common/nav/nav.component.js"></script>
+
+</body>
+</html>

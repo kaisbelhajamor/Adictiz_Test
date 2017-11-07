@@ -1,0 +1,23 @@
+
+<nav class="navbar navbar-default bg-faded bg">
+     <a class="navbar-brand logo"  href="#"><img width="100px" src="./img/adictiz.png"></a>
+    <div class="container-fluid">
+        <div class="navbar-header logo">
+           
+        </div>
+
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav white">
+                <li class="btn "><a ui-sref="about" >{{ 'NAV_BAR.ABOUT' |translate|uppercase }}</a></li>
+                <li class="btn "><a ui-sref="user" > {{ 'NAV_BAR.USER' |translate|uppercase  }}</a></li>
+                <li class="btn "><a ui-sref="gallery">{{'NAV_BAR.GALLERY' |translate|uppercase  }}</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <language-select>..</language-select>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
